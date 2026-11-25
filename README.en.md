@@ -6,6 +6,20 @@ MOSS Pocket is a portable notebook for Windows. Start typing in a new note or re
 
 [Download for Windows x64](https://github.com/Evergre7n/moss-pocket/releases/download/v1.0.0/MOSS-Pocket-1.0.0-windows-x64.zip) · [Release notes and SHA-256 checksums](https://github.com/Evergre7n/moss-pocket/releases/tag/v1.0.0)
 
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="docs/screenshots/en/cover-mobile-dark.webp">
+  <source media="(max-width: 600px)" srcset="docs/screenshots/en/cover-mobile-light.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/en/cover-dark.webp">
+  <img src="docs/screenshots/en/cover-light.webp" alt="A close-up photograph of living green moss beside MOSS Pocket. The sidebar lists field notes and the editor shows a note titled After the Rain.">
+</picture>
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="docs/screenshots/en/details-mobile-dark.webp">
+  <source media="(max-width: 600px)" srcset="docs/screenshots/en/details-mobile-light.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/en/details-dark.webp">
+  <img src="docs/screenshots/en/details-light.webp" alt="Play a four-second recording named Window rain.wav or click its filename to rename it. Open the moss image to inspect its spore capsules, then press Esc to return to the note.">
+</picture>
+
 Extract the ZIP and double-click `MOSS-Pocket.exe`. The Windows executable in 1.0.0 is unsigned. To upgrade, close the app, back up the entire `MOSS-Pocket-data` folder, then replace the old executable in its original location.
 
 ## How it works

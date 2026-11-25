@@ -7,6 +7,12 @@ The MOSS logo and wordmarks identify MOSS Pocket. Rights in the MOSS name and ma
 - `relay-icon.png` and `relay-icon.ico` supply the app and executable icons.
 - `relay-wordmark.png` and `relay-wordmark-light.png` supply the wordmark for the dark and light themes.
 
+## README images
+
+The README cover and in-app image viewer use a photograph of living moss by Engin Akyurt, taken on February 5, 2025. The documentation crops and resizes the photograph for display. The photograph retains its [Pexels license](https://www.pexels.com/license/). [Original photograph](https://www.pexels.com/photo/close-up-of-vibrant-green-moss-with-sporophytes-33212365/)
+
+The app screenshots show sample notes in the Chinese and English interfaces. The MOSS marks retain the rights described above.
+
 ## Embedded fonts
 
 The Windows build embeds the following files from [`epaint_default_fonts` 0.37.0](https://crates.io/crates/epaint_default_fonts/0.37.0). Each font keeps its upstream license.

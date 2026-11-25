@@ -2,9 +2,23 @@
 
 **简体中文** · [English](README.en.md)
 
-个人的想法笔记本。新建后可以直接写正文，也可以先录一段语音。笔记和附件加密保存在本机。
+新建就能写，也可以先录下当时的声音。笔记和附件加密保存在本机。
 
 [下载 Windows x64 便携版](https://github.com/Evergre7n/moss-pocket/releases/download/v1.0.0/MOSS-Pocket-1.0.0-windows-x64.zip) · [发布说明与 SHA-256 校验文件](https://github.com/Evergre7n/moss-pocket/releases/tag/v1.0.0)
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="docs/screenshots/zh/cover-mobile-dark.webp">
+  <source media="(max-width: 600px)" srcset="docs/screenshots/zh/cover-mobile-light.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/zh/cover-dark.webp">
+  <img src="docs/screenshots/zh/cover-light.webp" alt="鲜绿的苔藓实拍旁是 MOSS Pocket 编辑器。侧栏列出笔记，正文打开了《雨后的标本》。">
+</picture>
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="docs/screenshots/zh/details-mobile-dark.webp">
+  <source media="(max-width: 600px)" srcset="docs/screenshots/zh/details-mobile-light.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/zh/details-dark.webp">
+  <img src="docs/screenshots/zh/details-light.webp" alt="正文里有一段四秒的「窗边雨声.wav」，可以直接播放或点文件名改名。点开苔藓图片可在笔记窗口看细节，按 Esc 返回正文。">
+</picture>
 
 解压后双击 `MOSS-Pocket.exe` 即可使用。1.0.0 的 Windows 程序尚未签名。旧版用户请先关闭程序，备份整个 `MOSS-Pocket-data` 文件夹，再把新版 EXE 放回原位置。
 
