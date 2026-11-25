@@ -23,7 +23,7 @@ def tree(base, prefix):
 
 
 def public_docs():
-    for name in ("README.md", "LICENSE", *DOCS):
+    for name in ("README.md", "README.en.md", "LICENSE", *DOCS):
         yield ROOT / name, name
     yield from tree(ROOT / "docs/licenses/assets", "docs/licenses/assets")
 
