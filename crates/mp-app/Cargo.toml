@@ -1,0 +1,60 @@
+[package]
+name = "mp-app"
+description = "MOSS-Pocket 桌面应用"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "MOSS-Pocket"
+path = "src/main.rs"
+
+[dependencies]
+mp-core = { path = "../mp-core" }
+eframe = { version = "0.37", default-features = false, features = [
+    "clipboard",
+    "default_fonts",
+    "glow",
+    "system_fonts",
+    "wgpu",
+] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# 认得的图片格式都要解得开：png、jpg、gif、webp、bmp。
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "gif", "webp", "bmp"] }
+# 把系统字体映射进内存，而不是整个读进来：省掉约 38 MB 私有内存。
+memmap2 = "0.9"
+# 读系统剪贴板里的文字和图片。窗口层自带的剪贴板快捷键翻译关掉了，由程序自己处理。
+arboard = { version = "3.6", default-features = false, features = ["image-data"] }
+# 默认麦克风录音与软件内音频播放。
+cpal = { version = "0.18", default-features = false }
+rodio = { version = "0.23", default-features = false, features = [
+    "flac",
+    "mp3",
+    "mp4",
+    "symphonia-aac",
+    "symphonia-flac",
+    "symphonia-isomp4",
+    "symphonia-mp3",
+    "symphonia-ogg",
+    "symphonia-pcm",
+    "symphonia-vorbis",
+    "symphonia-wav",
+    "playback",
+] }
+raw-window-handle = "0.6"
+
+[target.'cfg(windows)'.dependencies]
+# Ogg Opus uses the statically bundled reference decoder.
+symphonia = { version = "=0.5.5", default-features = false, features = ["ogg"] }
+opusic-sys = { version = "=0.6.0", default-features = false, features = ["bundled"] }
+windows = { version = "0.62", features = [
+    "Win32_Graphics_Gdi",
+    "Win32_Media_MediaFoundation",
+    "Win32_System_Com_StructuredStorage",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Variant",
+    "Win32_UI_Shell_PropertiesSystem",
+    "Win32_UI_WindowsAndMessaging",
+] }
+windows-core = "0.62"

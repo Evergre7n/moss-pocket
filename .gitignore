@@ -1,0 +1,7 @@
+/target/
+/dist/
+# 便携模式的数据目录和设置文件永远不入库，放在哪一层都一样
+MOSS-Pocket-data/
+MOSS-Pocket.settings.json
+*.tmp
+*.prev

@@ -1,0 +1,16 @@
+[package]
+name = "mp-core"
+description = "MOSS-Pocket 的平台无关核心：加密、库文件格式、数据模型、编辑逻辑"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+aes-gcm = "0.11"
+argon2 = "0.6"
+getrandom = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "2"
+zeroize = "1"
